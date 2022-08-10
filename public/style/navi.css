@@ -1,5 +1,6 @@
 .radio-toolbar {
-  margin: 10px;
+  margin-left: 20px;
+  margin-top: 10px;
 }
 
 .radio-toolbar input[type="radio"] {
@@ -11,9 +12,10 @@
 .radio-toolbar label {
     display: inline-block;
     background-color: #eebbc3;
-    padding: 10px 20px;
+    padding: 150px 20px;
     font-family: 'Work Sans', sans-serif;
     font-size: 16px;
+    margin-bottom: 5px;
 }
 
 .radio-toolbar label:hover {
