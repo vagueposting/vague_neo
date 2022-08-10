@@ -16,6 +16,7 @@ h1 {
   font-size: 50pt;
   text-align: center;
   color: #fffffe;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -90,7 +91,7 @@ height: 100%;
 width: 180px;
 position: fixed;
 left: 0;
-top: 0;
+top: 15pt;
 padding-top: 40px;
 }
 
