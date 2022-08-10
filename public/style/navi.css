@@ -9,6 +9,8 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  background-color: #eebbc3;
+  color: #232946;
 }
 
 /* Hide the browser's default radio button */
@@ -20,12 +22,12 @@
 
 
 /* On mouse-over, add a grey background color */
-.container:hover input ~ .radio {
+.container:hover input {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.container input:checked ~ .radio {
+.container input:checked {
   background-color: #2196F3;
 }
 
@@ -37,7 +39,7 @@
 }
 
 /* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .radio:after {
+.container input:checked {
   display: block;
 }
 
