@@ -1,0 +1,43 @@
+<head>
+  <title>TEST</title>
+
+  <style>
+    .myDiv{
+    	display:none;
+        padding:10px;
+    }
+    #showOne{
+    	border:1px solid red;
+    }
+    #showTwo{
+    	border:1px solid green;
+    }
+    #showThree{
+    	border:1px solid blue;
+    }
+</style>
+</head>
+<body>
+  <script>
+  $(document).ready(function(){
+  $('input[type="radio"]').click(function(){
+  var demovalue = $(this).val();
+  $("div.myDiv").hide();
+  $("#show"+demovalue).show();
+  });
+  });
+  </script>
+
+  <input type="radio" name="demo" value="One"/> One
+  <input type="radio" name="demo" value="Two"/> Two
+  <input type="radio" name="demo" value="Three"/> Three
+  <div id="showOne" class="myDiv">
+  <strong>"One"</strong> selected.
+  </div>
+  <div id="showTwo" class="myDiv">
+  <strong>"Two"</strong> selected.
+  </div>
+  <div id="showThree" class="myDiv">
+  <strong>"Three"</strong> selected.
+  </div>
+</body>
