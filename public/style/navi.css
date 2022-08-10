@@ -1,11 +1,10 @@
 .container {
   display: block;
   position: relative;
-  padding-left: 35px;
   margin-bottom: 12px;
   margin-left: 12px;
   cursor: pointer;
-  font-size: 8pt;
+  font-size: 12pt;
   font-family: 'Work Sans', sans-serif;
   color: #232946;
   background-color: #eebbc3;
@@ -24,8 +23,8 @@
 
 
 /* On mouse-over, add a grey background color */
-.container:hover input {
-  background-color: #ccc;
+.container:hover {
+  background-color: #f5d6db;
 }
 
 /* When the radio button is checked, add a blue background */
@@ -33,24 +32,7 @@
   background-color: #2196F3;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.radio:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.container input:checked {
-  display: block;
-}
-
 /* Style the indicator (dot/circle) */
-.container .radio:after {
- 	top: 9px;
-	left: 9px;
-	width: 8px;
-	height: 8px;
-	border-radius: 50%;
-	background: white;
+.container:after {
+	background: #e699a4;
 }
