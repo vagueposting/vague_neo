@@ -16,11 +16,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v1
-    # Set up any tools and build steps here
-    - name: Install deps and build
-      run: |
-        npm i
-        npm run build
     # When the dist_dir is ready, deploy it to neocities
     - name: Deploy to neocities
       uses: bcomnes/deploy-to-neocities@v1
