@@ -15,8 +15,16 @@
     <link href="style/style.css" rel="stylesheet" type="text/css" media="all">
     <link href="style/navi.css" rel="stylesheet" type="text/css" media="all">
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('input[type="radio"]').click(function(){
+      var demovalue = $(this).val();
+      $("div.myDiv").hide();
+      $("#show"+demovalue).show();
+      });
+      });
+    </script>
 </head>
-
 
 <body>
     <!-- IF THIS LINE OF CODE APPEARS IT MEANS THE INTEGRATION WAS SUCCESSFUL -->
@@ -32,17 +40,6 @@
         <label for="naviThanks">ATTRIBUTIONS</label>
     </div>
   </div>
-
-  <script>
-    $(document).ready(function(){
-    $('input[type="radio"]').click(function(){
-    var demovalue = $(this).val();
-    $("div.myDiv").hide();
-    $("#show"+demovalue).show();
-    });
-    });
-  </script>
-
 
   <h1>{ vagueposting’s hub }</h1>
   <div class="myDiv" id="showHome">
@@ -63,7 +60,7 @@
         Eventually this site will have lots of pretty pictures. But not today.</p>
     </div>
   </div>
-    <br/>
+
   <div class="myDiv" id="showLinks">
     <h2>navigation</h2>
     <div class="myDiv reg navi">
@@ -85,7 +82,7 @@
       </ul>
     </div>
   </div>
-    <br/>
+
   <div class="myDiv" id="showThanks">
     <h2>attributions</h2>
     <div class="reg navi">
