@@ -10,7 +10,7 @@
 }
 
 .radio-toolbar label {
-    display: inline-block;
+    display: flex;
     background-color: #eebbc3;
     padding: 15px 20px;
     font-family: 'Work Sans', sans-serif;
