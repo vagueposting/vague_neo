@@ -21,32 +21,16 @@
   <body>
     <!-- IF THIS LINE OF CODE APPEARS IT MEANS THE INTEGRATION WAS SUCCESSFUL -->
   <div class="sidebar">
-    <ul class="donate-now">
-  <li>
-    <input type="radio" id="a25" name="amount" />
-    <label for="a25">$25</label>
-  </li>
-  <li>
-    <input type="radio" id="a50" name="amount" />
-    <label for="a50">$50</label>
-  </li>
-  <li>
-    <input type="radio" id="a75" name="amount" checked="checked" />
-    <label for="a75">$75</label>
-  </li>
-  <li>
-    <input type="radio" id="a100" name="amount" />
-    <label for="a100">$100</label>
-  </li>
-  <li>
-    <input type="radio" id="other" name="amount" />
-    <label for="other">other:</label>
-  </li>
-  <li>
-    <input type="text" id="otherAmount" name="numAmount" />
-  </li>
-</ul>
+    <div class="radio-toolbar">
+        <input type="radio" id="radioApple" name="radioFruit" value="apple" checked>
+        <label for="radioApple">Apple</label>
 
+        <input type="radio" id="radioBanana" name="radioFruit" value="banana">
+        <label for="radioBanana">Banana</label>
+
+        <input type="radio" id="radioOrange" name="radioFruit" value="orange">
+        <label for="radioOrange">Orange</label>
+    </div>
   </div>
 
     <h1>{ vagueposting’s hub }</h1>
