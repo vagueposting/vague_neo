@@ -19,6 +19,34 @@ h1 {
   margin-bottom: 0;
 }
 
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: #fffffe;
+  --color-2: #c5e7e7;
+  --color-3: #b8c1ec;
+}
+
+.title-word-2 {
+  --color-1: #c5e7e7;
+  --color-2: #b8c1ec;
+  --color-3: #c5e7e7;
+}
+
+.title-word-3 {
+  --color-1: #b8c1ec;
+  --color-2: #c5e7e7;
+  --color-3: #fffffe;
+}
+
+.title-word-4 {
+  --color-1: #c5e7e7;
+  --color-2: #fffffe;
+  --color-3: #c5e7e7;
+}
+
 h2 {
   font-family: 'Elsie', cursive;
   font-size: 30pt;
@@ -31,7 +59,7 @@ div.reg {
   padding: 10pt;
   margin-left: 160pt;
   margin-right: 160pt;
-  margin-top: 20pt;
+  margin-top: 10pt;
   border-radius: 10pt;
   position: relative;
 }
