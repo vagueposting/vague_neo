@@ -14,8 +14,6 @@
 
     <link href="style/style.css" rel="stylesheet" type="text/css" media="all">
     <link href="style/navi.css" rel="stylesheet" type="text/css" media="all">
-    <script type="text/javascript" src="js/indexhide.js"></script>
-
   </head>
 
 
@@ -33,6 +31,16 @@
         <label for="naviThanks">ATTRIBUTIONS</label>
     </div>
   </div>
+
+  <script>
+  $(document).ready(function(){
+      $('input[type="radio"]').click(function(){
+      	var demovalue = $(this).val();
+          $("div.myDiv").hide();
+          $("#index"+demovalue).show();
+      });
+  });
+  </script>
 
     <h1>{ vagueposting’s hub }</h1>
     <div class="myDiv reg" id="indexHome">
