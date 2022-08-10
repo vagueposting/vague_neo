@@ -33,9 +33,19 @@
     </div>
   </div>
 
+  <script>
+    $(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+    var demovalue = $(this).val();
+    $("div.myDiv").hide();
+    $("#show"+demovalue).show();
+    });
+    });
+  </script>
+
 
   <h1>{ vagueposting’s hub }</h1>
-  <div class="myDiv" id="indexHome">
+  <div class="myDiv" id="showHome">
     <div class="reg">
       <p class="A">Welcome! This website will serve as a compilation of my work.
         Said work is distributed across different platforms, like Twitter, Archive
@@ -54,7 +64,7 @@
     </div>
   </div>
     <br/>
-  <div class="myDiv" id="indexLinks">
+  <div class="myDiv" id="showLinks">
     <h2>navigation</h2>
     <div class="myDiv reg navi">
       <p class="A">We only have the index right now, but these are the most important
@@ -76,7 +86,7 @@
     </div>
   </div>
     <br/>
-  <div class="myDiv" id="indexThanks">
+  <div class="myDiv" id="showThanks">
     <h2>attributions</h2>
     <div class="reg navi">
       <ul class=A>
