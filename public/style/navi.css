@@ -27,3 +27,10 @@
     background-color: #ebadb7;
     cursor: default;
 }
+
+/* This is the part where I try to do the whole disappearing act thing. */
+
+.myDiv{
+	display:none;
+    padding:10px;
+}  

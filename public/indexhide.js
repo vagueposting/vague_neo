@@ -1,8 +1,7 @@
-function myFunction() {
-  var x = document.getElementById("indexHome");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-  } else {
-    x.style.display = "none";
-  }
-}
+$(document).ready(function(){
+    $('input[type="radio"]').click(function(){
+    	var demovalue = $(this).val(); 
+        $("div.myDiv").hide();
+        $("#index"+demovalue).show();
+    });
+});
