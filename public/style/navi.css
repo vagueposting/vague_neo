@@ -3,14 +3,16 @@
   position: relative;
   padding-left: 35px;
   margin-bottom: 12px;
+  margin-left: 12px;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 8pt;
+  font-family: 'Work Sans', sans-serif;
+  color: #232946;
+  background-color: #eebbc3;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  background-color: #eebbc3;
-  color: #232946;
 }
 
 /* Hide the browser's default radio button */
