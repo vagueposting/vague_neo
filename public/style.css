@@ -32,6 +32,7 @@ div.reg {
   margin-right: 160pt;
   margin-top: 20pt;
   border-radius: 10pt;
+  position: relative;
 }
 
 div.reg.navi {
@@ -39,6 +40,7 @@ div.reg.navi {
   margin-left: 200pt;
   margin-right: 200pt;
   border-radius: 10pt;
+  position: relative;
 }
 
 div.clock {
@@ -85,7 +87,7 @@ ul.B {
 
 .sidebar {
 height: 100%;
-width: 200px;
+width: 150px;
 position: absolute;
 left: 0;
 top: 0;
