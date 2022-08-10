@@ -3,8 +3,9 @@
   position: relative;
   margin-bottom: 12px;
   margin-left: 12px;
+  padding-left: 4px;
   cursor: pointer;
-  font-size: 12pt;
+  font-size: 15pt;
   font-family: 'Work Sans', sans-serif;
   color: #232946;
   background-color: #eebbc3;
