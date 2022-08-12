@@ -109,22 +109,3 @@ font-size: 18px;
 }
 
 /* Funky animated text. */
-.linear-wipe {
-  text-align: center;
-
-  background: linear-gradient(to right, #fffffe 20%, #c5e7e7 40%, #b8c1ec 60%, #c5e7e7 80%, #fffffe 100%);
-  background-size: 200% auto;
-
-  color: #000;
-  background-clip: text;
-  text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  animation: shine 1s linear infinite;
-  @keyframes shine {
-    to {
-      background-position: 200% center;
-    }
-  }
-}
