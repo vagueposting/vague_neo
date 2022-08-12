@@ -7,6 +7,14 @@ Sourced from Google Fonts. */
 @import url('https://fonts.googleapis.com/css2?family=Elsie:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
 
+/* Please work. Please work. */
+
+html { height: 100%; }
+
+body {
+  background-color: #232946;
+}
+
 h1 {
   font-family: 'Elsie', cursive;
   font-size: 50pt;
@@ -16,6 +24,8 @@ h1 {
 }
 
 .linear-wipe {
+  text-align: center;
+
   background: linear-gradient(to right, #fffffe 20%, #c5e7e7 40%, #b8c1ec 60%, #c5e7e7 80%, #fffffe 100%);
   background-size: 200% auto;
 
