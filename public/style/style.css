@@ -20,8 +20,6 @@ h1 {
 }
 
 .linear-wipe {
-  text-align: center;
-
   background: linear-gradient(to right, #fffffe 20%, #c5e7e7 40%, #b8c1ec 60%, #c5e7e7 80%, #fffffe 100%);
   background-size: 200% auto;
 
