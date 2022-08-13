@@ -121,7 +121,7 @@ font-size: 18px;
 /* For the picture at the corner. */
 .cornerIMG {
   position: sticky;
-  left: 20em;
+  right: 200px;
   height:50%;
   width:50%;
 }
