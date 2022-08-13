@@ -64,6 +64,16 @@ p.A {
   line-height: 1.5;
 }
 
+p.Aa {
+  text-align: justify;
+  color: #b8c1ec;
+  font-size: 10pt;
+  font-family: 'Work Sans', sans-serif;
+  text-indent: 10pt;
+  line-height: 1.5;
+}
+
+
 a.A {
   color: #b8c1ec;
   text-decoration: none;
@@ -109,31 +119,7 @@ font-size: 18px;
 }
 
 /* Funky animated text. */
-@-webkit-keyframes fadeInUp {
-	 from {
-		 opacity: 0;
-		 -webkit-transform: translate3d(0, 100%, 0);
-		 transform: translate3d(0, 100%, 0);
-	}
-	 to {
-		 opacity: 1;
-		 -webkit-transform: none;
-		 transform: none;
-	}
-}
-@keyframes fadeInUp {
-	 from {
-		 opacity: 0;
-		 -webkit-transform: translate3d(0, 100%, 0);
-		 transform: translate3d(0, 100%, 0);
-	}
-	 to {
-		 opacity: 1;
-		 -webkit-transform: none;
-		 transform: none;
-	}
-}
-.fadeInUp {
-	 -webkit-animation-name: fadeInUp;
-	 animation-name: fadeInUp;
+@keyframes animate-fade {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }

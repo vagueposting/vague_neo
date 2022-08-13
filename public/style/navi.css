@@ -33,4 +33,8 @@
 .myDiv{
 	display:none;
   margin: 0;
+  animation-duration: 0.5s;
+  animation-name: animate-fade;
+  animation-delay: 0.5s;
+  animation-fill-mode: backwards;
 }
