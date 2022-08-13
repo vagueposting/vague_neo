@@ -70,7 +70,7 @@ p.Aa {
   font-size: 10pt;
   font-family: 'Work Sans', sans-serif;
   line-height: 1;
-  margin-left:2pt;
+  margin-left:2em;
 }
 
 
@@ -121,5 +121,7 @@ font-size: 18px;
 /* For the picture at the corner. */
 .corner_img {
   position: sticky;
-  margin-left: 15em;
+  margin-left: 25em;
+  height:50%;
+  width:50%;
 }
