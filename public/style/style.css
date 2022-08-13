@@ -69,8 +69,8 @@ p.Aa {
   color: #b8c1ec;
   font-size: 10pt;
   font-family: 'Work Sans', sans-serif;
-  text-indent: 10pt;
-  line-height: 1.5;
+  line-height: 1;
+  margin-left:2pt;
 }
 
 
@@ -118,8 +118,8 @@ margin-left: 150px;
 font-size: 18px;
 }
 
-/* Funky animated text. */
-@keyframes animate-fade {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+/* For the picture at the corner. */
+.corner_img {
+  position: sticky;
+  margin-left: 15em;
 }
