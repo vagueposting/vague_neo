@@ -41,7 +41,7 @@
 /* Actual style in this damn house */
 
 body {
-  background-image: url("../img/bg.png");
+  background-image: url(/img/bg.jpg);
   background-size: 50%;
   background-color: white;
 }
@@ -51,7 +51,7 @@ body {
 }
 
 intro {
-  background-image: url("../img/haak_nian_234.png");
+  background-image: url(/img/haak_nian_234.png);
   background-size: 100%;
   background-position-y: 35%;
   background-position-x: center;
