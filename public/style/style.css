@@ -84,3 +84,9 @@ a:visited {
   background-color: gainsboro;
   color: #333333;
 }
+
+.aak_icons {
+  height: 40%;
+  width: 40%;
+  align-items: center;
+}
