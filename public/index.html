@@ -9,6 +9,19 @@
     <title>vagueposting’s hub</title>
 
     <!-- STYLESHEETS -->
+    <style>
+      .column {
+        float: left;
+        width: 33.33%;
+      }
+
+      /* Clear floats after the columns */
+      .row:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+    </style>
 
     <!-- SCRIPTS -->
     <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
@@ -16,9 +29,11 @@
 
   <body>
   <h1>hey guys i'm reworking my website right now</h1>
-    <iframe src="test1.html" width="33%" height="100%" style="float"></iframe>
-    <iframe src="test2.html" width="66%" height="50%"></iframe>
-
+  <div class="row">
+    <div class="column"></div>
+    <div class="column"></div>
+    <div class="column"></div>
+  </div>
     <p>delicious soup coming to a house near you one day</p>
   </body>
 </html>
