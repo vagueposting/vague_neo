@@ -42,6 +42,7 @@
 
 body {
   background-image: linear-gradient(#1c172e, #3c162f, #5c162e, #7c162e, #9c162e);
+  background-attachment: fixed;
 }
 
 .infobox {
