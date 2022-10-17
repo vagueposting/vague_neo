@@ -1,3 +1,5 @@
+/* RESPONSIVE DESIGN */
+
 * {
   box-sizing: border-box;
 }
@@ -34,4 +36,11 @@
     width: 100%;
     text-align: center;
   }
+}
+
+/* Fuckery. */
+.introbox {
+  background-image: image("img/haak_nian_shrink.png");
+  background-position: right bottom; /*Positioning*/
+  background-repeat: no-repeat; /*Prevent showing multiple background images*/
 }
