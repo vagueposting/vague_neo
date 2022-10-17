@@ -42,6 +42,7 @@
 
 body {
   background-image: url(img/bg.png);
+  background-color: white;
 }
 
 .infobox {
@@ -49,5 +50,6 @@ body {
 }
 
 intro {
-  background-image: url(img/haak_nian_shrink.png)
+  background-image: url(img/haak_nian_shrink.png);
+  background-color: white;
 }
