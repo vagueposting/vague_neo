@@ -51,7 +51,7 @@ body {
   background-color: white;
 }
 
-intro {
+.intro {
   background-image: url(/img/haak_nian_234.png);
   background-size: 185%;
   background-position: center 35%;
