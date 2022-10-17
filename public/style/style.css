@@ -37,3 +37,13 @@
     text-align: center;
   }
 }
+
+/* Actual style in this damn house */
+
+body {
+  background-image: image("img/bg.png");
+}
+
+.infobox {
+  background-color: white;
+}
