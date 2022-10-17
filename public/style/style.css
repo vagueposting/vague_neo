@@ -52,8 +52,16 @@ body {
   font-family: 'Josefin Sans', sans-serif;
 }
 
+h1.title {
+  font-family: 'Pacifico', cursive;
+}
+
+h1 {
+  font-family: 'Merriweather', serif;
+}
+
 .intro {
-  background-image: linear-gradient(rgba(28,23,46,0.25), rgba(28, 23, 46, 0)),
+  background-image: linear-gradient(rgba(28,23,46,0.5), rgba(28, 23, 46, 0) 90%),
   url(/img/haak_nian_234.png);
   background-size: 185%;
   background-position: center 35%;
@@ -63,10 +71,6 @@ body {
   border-left
 }
 
-h1.title {
-  font-family: 'Pacifico', cursive;
-}
-
-h1 {
-  font-family: 'Merriweather', serif;
+.infobox {
+  background-color: white;
 }
