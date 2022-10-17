@@ -20,6 +20,7 @@
   float: left;
   width: 66.66666%;
   padding: 20px;
+  margin: 1pt;
 }
 
 /* 1/3 column */
@@ -27,6 +28,7 @@
   float: left;
   width: 33.33333%;
   padding: 20px;
+  margin: 1pt;
 }
 
 /* Add responsiveness - make the columns appear on top of each other instead of next to each other on small screens */
@@ -35,16 +37,14 @@
   .column-33 {
     width: 100%;
     text-align: center;
+    margin: 1pt;
   }
 }
 
 /* Actual style in this damn house */
 
 body {
-  background-image: url(/img/bg.jpg);
-  background-size: 32px 32px;
-  background-repeat: repeat;
-  background-color: white;
+  background-image: linear-gradient(#1c172e, #3c162f, #5c162e, #7c162e, #9c162e);
 }
 
 .infobox {
@@ -52,8 +52,10 @@ body {
 }
 
 .intro {
-  background-image: url(/img/haak_nian_234.png);
+  background-image: linear-gradient(rgba(28,23,46,0.25), rgba(232, 232, 234, 0.50)), 
+  url(/img/haak_nian_234.png);
   background-size: 185%;
   background-position: center 35%;
   background-repeat: no-repeat;
+  color: white;
 }
