@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>vagueposting’s hub</title>
+
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+
+    <link href="style/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="style/navi.css" rel="stylesheet" type="text/css" media="all">
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script>
+      $(document).ready(function(){
+      $('input[type="radio"]').click(function(){
+      var demovalue = $(this).val();
+      $("div.myDiv").hide();
+      $("#show"+demovalue).show();
+      });
+      });
+    </script>
+</head>
+
+<body>
+    <!-- IF THIS LINE OF CODE APPEARS IT MEANS THE INTEGRATION WAS SUCCESSFUL -->
+  <div class="sidebar">
+    <p class="subtitle">Click a link to hop to another point:</p>
+    <div class="radio-toolbar">
+        <input type="radio" id="naviStart" name="demo" value="Home">
+        <label for="naviStart">START</label>
+
+        <input type="radio" id="naviLinks" name="demo" value="Links">
+        <label for="naviLinks">LINKS</label>
+
+        <input type="radio" id="naviThanks" name="demo" value="Thanks">
+        <label for="naviThanks">ATTRIBUTIONS</label>
+    </div>
+  </div>
+
+  <h1>
+    <span style='color:#FFFFFE;'>v</span><span style='color:#F8FCFB;'>a</span><span style='color:#F2F9F8;'>g</span><span style='color:#EBF7F6;'>u</span><span style='color:#E5F4F3;'>e</span><span style='color:#DEF1F1;'>p</span><span style='color:#D8EFEE;'>o</span><span style='color:#D1ECEC;'>s</span><span style='color:#CBE9E9;'>t</span><span style='color:#C4E7E7;'>i</span><span style='color:#C3E2E7;'>n</span><span style='color:#C2DEE8;'>g</span><span style='color:#C0DAE8;'>'</span><span style='color:#BFD6E9;'>s</span> <span style='color:#BCCDEA;'>h</span><span style='color:#BAC9EA;'>u</span><span style='color:#B9C5EB;'>b</span>
+  </h1>
+  <p class="subtitle" style="text-align:center"><i>enter into the world of my dreams</i></p>
+  <div class="myDiv fadeInUp" id="showHome">
+    <div class="reg">
+      <p class="A">Welcome! This website will serve as a compilation of my work.
+        Said work is distributed across different platforms, like Twitter, Archive
+      of Our Own, and so on so forth.</p>
+
+      <p class="A">Because of the nature of the Internet, especially on a chaotic,
+        strangely-moderated website like Twitter, such content is always at risk
+        of disappearance. But considering Neocities’ principles and structure I
+        believe that this site will last for a long time.</p>
+
+      <p class="A">Sure, nothing lasts forever. But to the living, decades are forever.</p>
+
+      <p class="A">You may contact me on
+        <a class="A" href = "mailto: vagueposted@gmail.com">vagueposted@gmail.com</a>.
+        Eventually this site will have lots of pretty pictures. But not today.</p>
+    </div>
+  </div>
+
+  <div class="myDiv fadeInUp" id="showLinks">
+    <h2>navigation</h2>
+    <div class="reg navi">
+      <p class="A">We only have the index right now, but these are the most important
+      links around here.</p>
+      <ul class="A">
+        <li><a class="A" href="https://listography.com/vagueposting">listography</a>
+          <ul class="B">
+            <li>A quick-and-easy directory of where to find me.</li>
+            <li>Includes lots of lists, like what I like.</li>
+            <li>Also includes loose guidelines on interacting with me on
+            social media.</li></ul></li><br/>
+        <li><a class="A" href="https://evilbreadbox.tumblr.com/">archival tumblr</a>
+          <ul class="B">
+            <li>a companion blog to this website that archives
+            a large number of my work, particularly roleplaying storylines.</li>
+            </ul
+          </li>
+        <li><a class="A" href="https://ko-fi.com/vagueposting">ko-fi</a>
+          <ul class="B">
+            <li>If you ever wanted to spare me a few dollars, hit me up here.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="myDiv fadeInUp" id="showThanks">
+    <h2>attributions</h2>
+    <div class="reg navi">
+      <ul class=A>
+        <li><b>fonts</b>
+          <ul class="B">
+            <li><a class="A" href="https://fonts.google.com/specimen/Elsie">Elsie</a> by Alejandro Inler</li>
+            <li><a class="A" href="https://fonts.google.com/specimen/Work+Sans">Work Sans</a> by Wei Huang</li>
+          </ul>
+        </li>
+        <li><b>color palettes</b>
+          <ul class="B">
+            <li>site palette from <a class="A" href="https://www.happyhues.co">Happy Hues</a></li>
+          </ul>
+    </div>
+  </div>
+  <img src="img/indigo_e2.png" height="40%" style="position:fixed;bottom:0px;right:10px;z-index:999"/>
+    <div class="clock">
+      <p class="A clock"><b>SITE AGE:</b> <span id="demo"></span></p>
+    </div>
+    <script>
+    // Set the date we're counting down to
+    var endDate = new Date("Jul 1, 2021 2:28:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var d = new Date();
+      localTime = d.getTime();
+      localOffset = d.getTimezoneOffset() * 60000;
+      utc = localTime + localOffset;
+
+      // Find the distance between now and the count down date
+      var distance = utc - endDate;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      // Display the result in the element with id="demo"
+      document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+      + minutes + "m " + seconds + "s ";
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = "Uh oh! an error has occured";
+
+      }
+    }, 1000);
+    </script>
+</body>
+</html>
