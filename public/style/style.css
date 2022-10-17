@@ -41,7 +41,7 @@
 /* Actual style in this damn house */
 
 body {
-  background-image: image("img/bg.png");
+  background-image: url("img/bg.png");
 }
 
 .infobox {
