@@ -11,7 +11,7 @@
 }
 
 .container {
-  padding: 0px;
+  padding: 8px;
 }
 
 /* Clear floats */
@@ -70,7 +70,7 @@ a:visited {
 }
 
 .intro {
-  background-image: linear-gradient(rgba(28,23,46,0.90), rgba(28, 23, 46, 0.75) 90%),
+  background-image: linear-gradient(rgba(28,23,46,0.80), rgba(28, 23, 46, 0.60) 80%),
   url(/img/haak_nian_234.png);
   background-size: 185%;
   background-position: center 35%;
