@@ -42,7 +42,7 @@
 
 body {
   background-image: url(/img/bg.jpg);
-  background-size: 50%;
+  background-size: contain;
   background-color: white;
 }
 
@@ -52,8 +52,7 @@ body {
 
 intro {
   background-image: url(/img/haak_nian_234.png);
-  background-size: 100%;
-  background-position-y: 35%;
-  background-position-x: center;
+  background-size: 185%;
+  background-position: center 35%;
   background-repeat: no-repeat;
 }
