@@ -42,6 +42,7 @@
 
 body {
   background-image: url(../img/bg.png);
+  background-size: 50%;
   background-color: white;
 }
 
@@ -50,8 +51,8 @@ body {
 }
 
 intro {
-  background-image: linear-gradient(-45deg, black, transparent), url(../img/haak_nian_shrink.png);
-  background-size: 180%;
+  background-image: linear-gradient(-45deg, black, transparent), url(../img/haak_nian_234.png);
+  background-size: 100%;
   background-position-y: 35%;
   background-position-x: center;
   background-repeat: no-repeat;
