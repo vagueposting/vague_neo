@@ -124,8 +124,6 @@ a:visited {
 
 .skill > p {
     font-size: 18px;
-    font-weight: 700;
-    color: #1a1716;
     margin: 0;
 }
 
@@ -161,26 +159,10 @@ a:visited {
     position: relative;
 }
 
-.skill1 .skill-count1 {
+.nano22 .nano-count22 {
     right: 0;
 }
 
-.skill1 {
+.nano22 {
     width: 95%;
-}
-
-.skill2 {
-    width: 85%;
-}
-
-.skill2 .skill-count2 {
-    right: 0;
-}
-
-.skill3{
-   width: 75%;
-}
-
-.skill3 .skill-count3 {
-    right: 0;
 }
