@@ -9,6 +9,8 @@ body {
 
 a {
   color: rgb(117, 140, 80);
+  font-weight:bold;
+  text-decoration: none;
 }
 
 a:visited {
