@@ -9,7 +9,7 @@ body {
 
 a {
   color: rgb(117, 140, 80);
-  font-weight:bold;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -139,4 +139,21 @@ img.emoji {
   margin-left: auto;
   margin-right: auto;
   width: 30%;
+}
+
+/* Tables */
+table {
+  width: 100%;
+}
+
+td.head {
+  font-weight: bold;
+  background-color: #ffc98b;
+  padding: 0.5em 0.25em;
+  text-align: center;
+}
+
+td {
+  background-color: white;
+  padding: 0.25em 0.5em;
 }

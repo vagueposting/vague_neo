@@ -1,0 +1,945 @@
+<!DOCTYPE html>
+
+<!--PAGE THEME #08: DEJA VU by @nonspace.
+  Don't steal.
+  Don't claim as your own.
+  Don't use as base code.
+  Editing for personal use is fine!-->
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/png" href="{Favicon}" />
+    <title>{Title}</title>
+
+    <!--FONTS-->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Chivo:400,400i,700|Playfair+Display:400,400i,700,700i|Roboto+Slab:400,700|Source+Code+Pro:400,700&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese"
+      rel="stylesheet"
+    />
+
+    <!--FONT AWESOME-->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.1/css/all.css"
+      crossorigin="anonymous"
+    />
+
+    <!--JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+    <!--You can find all color settings at the beginning of the style tag.
+  All of the colors and some other details are changeable through this     
+  variables.
+  Hopefully that makes it easier to customise!
+
+  If you want individual colors per tab/character you will need to 
+  enable it below in "Color per tab toggle". This is disabled by default.
+
+  To add more tabs:
+    1. Copy/paste a new entry within the navigation. 
+       I've marked what you need to copy. You can search for "Copy here".          Change the 'data-tab' to #tab-x (x being a number not used before, 
+       e.g. tab-6)
+    2. Copy/paste a new tab. Important! Make sure your new tab does NOT have        the 'current' class; change its ID to tab-x (see above 
+       (they must match!!) e.g. tab-6),
+
+  -->
+
+    <!--COLOR PER TAB TOGGLE-->
+    <script type="text/javascript">
+      /*This lets you enable/disable different colors per tab.
+      true = enabled, false =disabled*/
+      var colorPerTab = false;
+      /*To turn the image gallery into connection popups
+    IMPORTANT: The popups (in the code) need to be in the same order
+    as the corresponding gallery image otherwise it will open the
+    wrong one! */
+      var connectionPopup = false;
+    </script>
+    <link rel="stylesheet" type="text/css" href="../style/muse.css" />
+
+    <!--MOBILE STYLES-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://drive.google.com/uc?export=view&id=1YhHjX9QD1fzQ03jjOrSqN1oTWJOAcyy3"
+    />
+  </head>
+  <body>
+    <div id="wrapper">
+      <nav class="hidden">
+        <span id="close"></span>
+        <h2 class="chivo-dark">Characters</h2>
+        <ul>
+          <li class="current" data-tab="#tab-1">
+            <img
+              src="https://images.pexels.com/photos/702350/pexels-photo-702350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+            <div>
+              Character Name
+              <span>Subtitle</span>
+            </div>
+          </li>
+          <!--COPY HERE-->
+          <li class="" data-tab="#tab-2">
+            <img
+              src="https://images.pexels.com/photos/1670646/pexels-photo-1670646.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+            <div>
+              Character Name
+              <span>Subtitle</span>
+            </div>
+          </li>
+          <!--TO HERE-->
+          <li class="" data-tab="#tab-3">
+            <img
+              src="https://images.pexels.com/photos/1674730/pexels-photo-1674730.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+            <div>
+              Character Name
+              <span>Subtitle</span>
+            </div>
+          </li>
+          <li data-tab="#tab-4">
+            <img
+              src="https://images.pexels.com/photos/1672548/pexels-photo-1672548.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+            <div>
+              Character Name
+              <span>Subtitle</span>
+            </div>
+          </li>
+          <li data-tab="#tab-5">
+            <img
+              src="https://images.pexels.com/photos/1661857/pexels-photo-1661857.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+            />
+            <div>
+              Character Name
+              <span>Subtitle</span>
+            </div>
+          </li>
+
+          <!--PASTE NEW NAV ENTRIES HERE-->
+        </ul>
+        <div id="credit" class="chivo-dark">
+          Design & Code by <a href="https://nonspace.tumblr.com">NNSPC</a>
+        </div>
+      </nav>
+
+      <main>
+        <!--TAB ONE-->
+        <div class="tab current" id="tab-1">
+          <div class="bar colored">
+            <div class="bar-links">
+              <ul>
+                <li>
+                  <a href="/tagged/TAG"> <i class="fas fa-hashtag"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/HEADCANONS"> <i class="fas fa-book"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/PICTURES"> <i class="fas fa-camera"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/WRITING"> <i class="fas fa-pen"></i></a>
+                </li>
+                <li>
+                  <a href="PLAYLIST"> <i class="fas fa-music"></i></a>
+                </li>
+                <li>
+                  <a href="PINTEREST"> <i class="fab fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="bar-bottom">
+              <div class="rotate">active other something</div>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="picture">
+              <img
+                src="https://images.pexels.com/photos/702350/pexels-photo-702350.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+              />
+            </div>
+            <div class="details">
+              <h3 class="chivo-dark">Character Name</h3>
+              <ul>
+                <li><i>Full name</i> <span> First Last </span></li>
+                <li><i>Nickname</i> <span> Nick </span></li>
+                <li><i>Age</i> <span> 00 </span></li>
+                <li><i>D.o.B</i> <span> Month, 00th </span></li>
+                <li><i>Occupation</i> <span> Occupation </span></li>
+                <li><i>Residence</i> <span> Country </span></li>
+                <li><i>Status</i><span> Status </span></li>
+                <li><i>Affiliation</i><span> None </span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="info">
+            <div class="content">
+              <div class="row-1">
+                <div class="text">
+                  <div class="headline">
+                    <h3 class="chivo-dark">Biography</h3>
+                    <ul>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                    </ul>
+                  </div>
+                  <div class="txt">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-2">
+                <div class="bubbles">
+                  <ul>
+                    <li>Character</li>
+                    <li>Character</li>
+                    <li>Character Trait</li>
+                    <li>Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character</li>
+                    <li>Character</li>
+                    <li>Character Trait</li>
+                    <li>Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character Trait</li>
+                  </ul>
+                </div>
+                <div class="quote">
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                    <span>- <i>Lorem Ipsum</i>, <b>Dolor Sit</b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery">
+              <ul>
+                <li>
+                  <img
+                    src="https://images.pexels.com/photos/262333/pexels-photo-262333.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://images.pexels.com/photos/105470/pexels-photo-105470.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://images.pexels.com/photos/965879/pexels-photo-965879.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://images.pexels.com/photos/1007523/pexels-photo-1007523.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://images.pexels.com/photos/275033/pexels-photo-275033.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  />
+                </li>
+                <li>
+                  <img
+                    src="https://images.pexels.com/photos/735911/pexels-photo-735911.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div class="bar side-title">
+              <div class="rotate">Character Name</div>
+            </div>
+          </div>
+
+          <!--CONNECTION POPUP ONE-->
+          <!--COPY HERE-->
+          <div class="popup">
+            <div class="popup-inner">
+              <!--IMAGE-->
+              <img
+                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+              />
+              <div class="con-desc">
+                <h3 class="chivo-dark">Connection</h3>
+                <!--CONNECTION TEXT-->
+                <div class="con-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--TO HERE FOR MORE POPUPS-->
+        </div>
+        <!--tab one end-->
+
+        <!----------------------COPY HERE---------------------->
+        <!--TAB TWO-->
+        <div class="tab" id="tab-2">
+          <div class="bar colored">
+            <div class="bar-links">
+              <ul>
+                <li>
+                  <a href="/tagged/TAG"> <i class="fas fa-hashtag"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/HEADCANONS"> <i class="fas fa-book"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/PICTURES"> <i class="fas fa-camera"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/WRITING"> <i class="fas fa-pen"></i></a>
+                </li>
+                <li>
+                  <a href="PLAYLIST"> <i class="fas fa-music"></i></a>
+                </li>
+                <li>
+                  <a href="PINTEREST"> <i class="fab fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="bar-bottom">
+              <div class="rotate">active other something</div>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="picture">
+              <img src="http://placehold.jp/111111/666666/250x250.png" />
+            </div>
+            <div class="details">
+              <h3 class="chivo-dark">Character Name</h3>
+              <ul>
+                <li><i>Full name</i> <span> First Last </span></li>
+                <li><i>Nickname</i> <span> Nick </span></li>
+                <li><i>Age</i> <span> 00 </span></li>
+                <li><i>D.o.B</i> <span> Month, 00th </span></li>
+                <li><i>Occupation</i> <span> Occupation </span></li>
+                <li><i>Residence</i> <span> Country </span></li>
+                <li><i>Status</i><span> Status </span></li>
+                <li><i>Affiliation</i><span> None </span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="info">
+            <div class="content">
+              <div class="row-1">
+                <div class="text">
+                  <div class="headline">
+                    <h3 class="chivo-dark">Biography</h3>
+                    <ul>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                    </ul>
+                  </div>
+                  <div class="txt">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-2">
+                <div class="bubbles">
+                  <ul>
+                    <li>Character</li>
+                    <li>Character</li>
+                    <li>Character Trait</li>
+                    <li>Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character</li>
+                    <li>Character</li>
+                    <li>Character Trait</li>
+                    <li>Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character Trait</li>
+                  </ul>
+                </div>
+                <div class="quote">
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                    <span>- <i>Lorem Ipsum</i>, <b>Dolor Sit</b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery">
+              <ul>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+              </ul>
+            </div>
+            <div class="bar side-title">
+              <div class="rotate">Character Name</div>
+            </div>
+          </div>
+
+          <!--CONNECTION POPUP ONE-->
+          <div class="popup">
+            <div class="popup-inner">
+              <!--IMAGE-->
+              <img
+                src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80"
+              />
+              <div class="con-desc">
+                <h3 class="chivo-dark">Connection</h3>
+                <!--CONNECTION TEXT-->
+                <div class="con-text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation Lorem ipsum
+                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                  minim veniam, quis nostrud exercitation
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-----------------------------TO HERE------------------------------>
+
+        <!--TAB THREE-->
+        <div class="tab" id="tab-3">
+          <div class="bar colored">
+            <div class="bar-links">
+              <ul>
+                <li>
+                  <a href="/tagged/TAG"> <i class="fas fa-hashtag"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/HEADCANONS"> <i class="fas fa-book"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/PICTURES"> <i class="fas fa-camera"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/WRITING"> <i class="fas fa-pen"></i></a>
+                </li>
+                <li>
+                  <a href="PLAYLIST"> <i class="fas fa-music"></i></a>
+                </li>
+                <li>
+                  <a href="PINTEREST"> <i class="fab fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="bar-bottom">
+              <div class="rotate">active other something</div>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="picture">
+              <img src="http://placehold.jp/111111/666666/250x250.png" />
+            </div>
+            <div class="details">
+              <h3 class="chivo-dark">Character Name</h3>
+              <ul>
+                <li><i>Full name</i> <span> First Last </span></li>
+                <li><i>Nickname</i> <span> Nick </span></li>
+                <li><i>Age</i> <span> 00 </span></li>
+                <li><i>D.o.B</i> <span> Month, 00th </span></li>
+                <li><i>Occupation</i> <span> Occupation </span></li>
+                <li><i>Residence</i> <span> Country </span></li>
+                <li><i>Status</i><span> Status </span></li>
+                <li><i>Affiliation</i><span> None </span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="info">
+            <div class="content">
+              <div class="row-1">
+                <div class="text">
+                  <div class="headline">
+                    <h3 class="chivo-dark">Biography</h3>
+                    <ul>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                    </ul>
+                  </div>
+                  <div class="txt">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-2">
+                <div class="bubbles">
+                  <ul>
+                    <li>Character</li>
+                    <li>Character</li>
+                    <li>Character Trait</li>
+                    <li>Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character</li>
+                    <li>Character</li>
+                    <li>Character Trait</li>
+                    <li>Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character Trait</li>
+                  </ul>
+                </div>
+                <div class="quote">
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                    <span>- <i>Lorem Ipsum</i>, <b>Dolor Sit</b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery">
+              <ul>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+              </ul>
+            </div>
+            <div class="bar side-title">
+              <div class="rotate">Character Name</div>
+            </div>
+          </div>
+        </div>
+
+        <!--TAB FOUR-->
+        <div class="tab" id="tab-4">
+          <div class="bar colored">
+            <div class="bar-links">
+              <ul>
+                <li>
+                  <a href="/tagged/TAG"> <i class="fas fa-hashtag"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/HEADCANONS"> <i class="fas fa-book"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/PICTURES"> <i class="fas fa-camera"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/WRITING"> <i class="fas fa-pen"></i></a>
+                </li>
+                <li>
+                  <a href="PLAYLIST"> <i class="fas fa-music"></i></a>
+                </li>
+                <li>
+                  <a href="PINTEREST"> <i class="fab fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="bar-bottom">
+              <div class="rotate">active other something</div>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="picture">
+              <img src="http://placehold.jp/111111/666666/250x250.png" />
+            </div>
+            <div class="details">
+              <h3 class="chivo-dark">Character Name</h3>
+              <ul>
+                <li><i>Full name</i> <span> First Last </span></li>
+                <li><i>Nickname</i> <span> Nick </span></li>
+                <li><i>Age</i> <span> 00 </span></li>
+                <li><i>D.o.B</i> <span> Month, 00th </span></li>
+                <li><i>Occupation</i> <span> Occupation </span></li>
+                <li><i>Residence</i> <span> Country </span></li>
+                <li><i>Status</i><span> Status </span></li>
+                <li><i>Affiliation</i><span> None </span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="info">
+            <div class="content">
+              <div class="row-1">
+                <div class="text">
+                  <div class="headline">
+                    <h3 class="chivo-dark">Biography</h3>
+                    <ul>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                    </ul>
+                  </div>
+                  <div class="txt">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-2">
+                <div class="bubbles">
+                  <ul>
+                    <li>Character</li>
+                    <li>Character</li>
+                    <li>Character Trait</li>
+                    <li>Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character</li>
+                    <li>Character</li>
+                    <li>Character Trait</li>
+                    <li>Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character Trait</li>
+                  </ul>
+                </div>
+                <div class="quote">
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                    <span>- <i>Lorem Ipsum</i>, <b>Dolor Sit</b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery">
+              <ul>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+              </ul>
+            </div>
+            <div class="bar side-title">
+              <div class="rotate">Character Name</div>
+            </div>
+          </div>
+        </div>
+
+        <!--TAB FIVE-->
+        <div class="tab" id="tab-5">
+          <div class="bar colored">
+            <div class="bar-links">
+              <ul>
+                <li>
+                  <a href="/tagged/TAG"> <i class="fas fa-hashtag"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/HEADCANONS"> <i class="fas fa-book"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/PICTURES"> <i class="fas fa-camera"></i></a>
+                </li>
+                <li>
+                  <a href="/tagged/WRITING"> <i class="fas fa-pen"></i></a>
+                </li>
+                <li>
+                  <a href="PLAYLIST"> <i class="fas fa-music"></i></a>
+                </li>
+                <li>
+                  <a href="PINTEREST"> <i class="fab fa-pinterest-p"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="bar-bottom">
+              <div class="rotate">active other something</div>
+            </div>
+          </div>
+          <div class="stats">
+            <div class="picture">
+              <img src="http://placehold.jp/111111/666666/250x250.png" />
+            </div>
+            <div class="details">
+              <h3 class="chivo-dark">Character Name</h3>
+              <ul>
+                <li><i>Full name</i> <span> First Last </span></li>
+                <li><i>Nickname</i> <span> Nick </span></li>
+                <li><i>Age</i> <span> 00 </span></li>
+                <li><i>D.o.B</i> <span> Month, 00th </span></li>
+                <li><i>Occupation</i> <span> Occupation </span></li>
+                <li><i>Residence</i> <span> Country </span></li>
+                <li><i>Status</i><span> Status </span></li>
+                <li><i>Affiliation</i><span> None </span></li>
+              </ul>
+            </div>
+          </div>
+          <div class="info">
+            <div class="content">
+              <div class="row-1">
+                <div class="text">
+                  <div class="headline">
+                    <h3 class="chivo-dark">Biography</h3>
+                    <ul>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                      <li>keyword</li>
+                    </ul>
+                  </div>
+                  <div class="txt">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </div>
+                </div>
+              </div>
+
+              <div class="row-2">
+                <div class="bubbles">
+                  <ul>
+                    <li>Character</li>
+                    <li>Character</li>
+                    <li>Character Trait</li>
+                    <li>Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character</li>
+                    <li>Character</li>
+                    <li>Character Trait</li>
+                    <li>Trait</li>
+                    <li>Character Trait</li>
+                    <li>Character Trait</li>
+                  </ul>
+                </div>
+                <div class="quote">
+                  <div>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua.
+                    <span>- <i>Lorem Ipsum</i>, <b>Dolor Sit</b></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="gallery">
+              <ul>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+                <li>
+                  <img src="http://placehold.jp/111111/666666/100x100.png" />
+                </li>
+              </ul>
+            </div>
+            <div class="bar side-title">
+              <div class="rotate">Character Name</div>
+            </div>
+          </div>
+        </div>
+
+        <!--PASTE NEW TABS HERE-->
+      </main>
+    </div>
+
+    <!--DO NOT TOUCH THE SCRIPTS UNLESS YOU KNOW WHAT YOU'RE DOING-->
+    <script>
+      $(document).ready(function () {
+        if (connectionPopup === true) {
+          $(".gallery li").each(function () {
+            $(this).css("cursor", "pointer");
+          });
+
+          /*POPUP*/
+          /*opens popup on click*/
+          $(".gallery li").on("click", function () {
+            var currentIndex = $(this).index() + 4;
+
+            var currentLoc =
+              ".tab.current .popup:nth-of-type(" + currentIndex + ")";
+
+            $(this)
+              .addClass("active")
+              .siblings(".gallery li")
+              .removeClass("active");
+
+            $(".popup").fadeOut();
+            $(currentLoc).fadeIn().css("display", "flex");
+            $(document.body).addClass("noscroll"); /*noscroll on background*/
+          });
+
+          $(".popup").on("click", function () {
+            $(this).fadeOut();
+            $(document.body).removeClass("noscroll");
+            $(".gallery img").removeClass("active");
+          });
+          /*prevent closing popup by clicking on it*/
+          $(".popup-inner").click(function (e) {
+            e.stopPropagation();
+          });
+        }
+
+        $("nav li").on("click", function (e) {
+          var currentAttrValue = $(this).attr("data-tab");
+
+          window.location.hash = $(this).attr("data-tab");
+
+          $(".tab" + currentAttrValue)
+            .addClass("current")
+            .siblings(".tab")
+            .removeClass("current");
+          $(this).addClass("current").siblings("nav li").removeClass("current");
+        });
+
+        /*HASH SCRIPT*/
+        var hash = $.trim(window.location.hash);
+
+        if (hash) {
+          $('nav li[data-tab$="' + hash + '"]').trigger("click");
+        }
+
+        $("#close").on("click", function () {
+          if ($(this).hasClass("x")) {
+            $("#close, nav, nav .current, nav ul").removeAttr("style");
+            $("#close").removeClass("x");
+          } else {
+            $("nav .current").css({
+              transform: "scale(1)",
+            });
+            $("nav").css({
+              "margin-left": "-250px",
+            });
+            $("nav ul").css({
+              "overflow-y": "hidden",
+            });
+            $("#close").css({
+              left: "12px",
+            });
+            $("#close").addClass("x");
+          }
+        });
+
+        /*color per tab*/
+        if (colorPerTab === true) {
+          var i = 1;
+          $(".tab").each(function () {
+            var thisNext = $(this).find("nav ul, .bar.colored, .bubbles ul li");
+            thisNext.css({
+              background: "var(--accentColorOne-" + i + ")",
+              background:
+                "-webkit-linear-gradient(to bottom, var(--accentColorOne-" +
+                i +
+                "), var(--accentColorTwo-" +
+                i +
+                "))",
+              background:
+                "linear-gradient(to bottom, var(--accentColorOne-" +
+                i +
+                "), var(--accentColorTwo-" +
+                i +
+                "))",
+            });
+            i++;
+          });
+        }
+      }); /*document ready*/
+    </script>
+  </body>
+</html>
