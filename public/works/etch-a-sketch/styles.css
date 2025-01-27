@@ -291,5 +291,9 @@ div.pixel {
 }
 
 .footer a {
-    font-color: #E382B9;
+    color: #E382B9;
+}
+
+.footer a:visited {
+    color: rgb(230,69,110);
 }
