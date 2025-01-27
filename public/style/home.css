@@ -153,3 +153,7 @@ td {
   background-color: white;
   padding: 0.25rem 0.5rem;
 }
+
+tr td:first-child {
+  text-align: center;
+}
