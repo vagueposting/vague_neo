@@ -28,6 +28,19 @@ li {
   list-style-type: "◆";
 }
 
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-size: 2rem;
+}
+
+.notFound img {
+  border-radius: 2rem;
+}
+
 .container {
   display: flex;
   flex-direction: row;
@@ -128,13 +141,6 @@ span.underline {
 .body p.footer {
   font-style: italic;
   font-size: 1.5vmin;
-}
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 30%;
 }
 
 /* Tables */
