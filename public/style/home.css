@@ -1,6 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap");
 
+:root {
+  font-size: 1vh;
+}
+
 body {
+  height: 100%;
+  margin: 0 2.5vw;
   font-family: "Lato", sans-serif;
   background-image: url("../img/alt_bg.jpg");
   background-size: 20%;
@@ -23,32 +29,21 @@ li {
 }
 
 .container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 0.5fr;
-  grid-template-rows: 25vmax 0.1fr 1fr 1fr;
-  grid-auto-columns: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "header header header header"
-    "links links links links"
-    "sidebar body body body"
-    "sidebar body body body";
+  display: flex;
+  flex-direction: row;
   padding: 0 0px;
-  margin: auto 5vmax auto 5vmax;
-  position: absolute;
 }
 
 .header {
-  grid-area: header;
-  text-align: center;
+  display: flex;
+  height: 35vh;
   background-image: linear-gradient(
       rgba(245, 206, 199, 0.5),
       rgba(245, 206, 199, 0.8) 80%
     ),
     url(../img/header.png);
   background-size: 100%;
-  background-position: 50% 55%;
+  background-position: 50% 60%;
   display: flex;
   justify-content: center;
 }
@@ -62,17 +57,21 @@ li {
 }
 
 .links {
-  grid-area: links;
+  display: flex;
+  justify-content: center;
+  align-items: space-evenly;
+  flex-wrap: wrap;
+  gap: 2rem;
   background-color: #ffc98b;
   text-align: center;
   font-size: 1.5vmax;
-  padding: 0.5vmin 0 0.5vmin 0;
+  padding: 1.5rem 1rem
 }
 
 .sidebar {
-  grid-area: sidebar;
   background-color: #ffb284;
-  font-size: 1.25vmax;
+  width: 20%;
+  font-size: 2rem;
   padding: 0.5vw 1vmin 0vw;
 }
 
@@ -80,58 +79,55 @@ li {
   margin-left: -1rem;
 }
 
-.sidebar h1 {
+.sidebar h1, .sidebar h2, .sidebar h3 {
   font-family: "Roboto Slab", serif;
-  font-size: 2vmax;
+
+}
+
+.sidebar h1 {
   font-weight: 500;
+  font-size: 3rem;
 }
 
 .sidebar h2 {
-  font-family: "Roboto Slab", serif;
-  margin-left: 0.5rem;
-  font-size: 1.5vmax;
+  margin-left: 0.90rem;
+  font-size: 2.5rem;
 }
 
-.sidebar h2 span.underline {
+.sidebar h3 {
+  margin-left: 0.75rem;
+  font-size: 2rem;
+}
+
+span.underline {
   border-bottom: 2px dashed #0a0703;
 }
 
 .body {
-  grid-area: body;
+  display: block;
+  width: 80%;
+  height: 100%;
   background-color: #f5eeec;
-  font-size: 2.5vmin;
+  font-size: 2.5rem;
   padding: 0.25vw 2vw 1vw;
 }
 
 .body h1 {
   font-family: "Roboto Slab", serif;
   font-weight: 700;
-  font-size: 3vmax;
+  font-size: 5rem;
   text-align: center;
 }
 
 .body h2 {
   font-family: "Roboto Slab", serif;
   font-weight: 500;
-  font-size: 2.2vmax;
+  font-size: 3rem;
 }
 
 .body p.footer {
   font-style: italic;
   font-size: 1.5vmin;
-}
-
-img.emoji {
-  /* Since we are using SVGs, you have to change the width using CSS */
-  width: 1.5em;
-
-  /* 
-  This is to make the emojis feel like actual emojis to 
-  the user and they won't act like images. This makes the emojis
-  non-reactive to any mouse events such as dragging, 
-  hovering, clicking etc. Makes it feel like its actual text.
-  */
-  pointer-events: none;
 }
 
 .center {
@@ -149,11 +145,11 @@ table {
 td.head {
   font-weight: bold;
   background-color: #ffc98b;
-  padding: 0.5em 0.25em;
+  padding: 0.5rem 0.25rem;
   text-align: center;
 }
 
 td {
   background-color: white;
-  padding: 0.25em 0.5em;
+  padding: 0.25rem 0.5rem;
 }
