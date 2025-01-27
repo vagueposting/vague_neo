@@ -1,0 +1,67 @@
+/* NaNoWriMo progress bar */
+
+.nanocard {
+  background-image: linear-gradient(rgba(28,23,46,0.80), rgba(28, 23, 46, 0.60) 80%),
+  url(../img/aak_skin2.png);
+  background-size: 185%;
+  background-position: center 45%;
+  background-repeat: no-repeat;
+  color: gainsboro;
+  text-align: center;
+}
+
+.wrapper {
+    width: 400px;
+    margin:0 auto;
+}
+
+.skill {
+    margin-bottom: 35px;
+    position: relative;
+    overflow-x:hidden;
+}
+
+.skill > p {
+    font-size: 14px;
+    margin: 0;
+}
+
+.skill:before {
+    width: 100%;
+    height: 20px;
+    content: "";
+    display: block;
+    position: absolute;
+    background: gainsboro;
+    bottom: 0;
+}
+
+.skill-bar {
+    width: 100%;
+    height: 20px;
+    background:#9c162e;
+    display: block;
+    position: relative;
+}
+
+.skill-bar span {
+    position: absolute;
+    border-top: 5px solid #f4392f;
+    top: -30px;
+    padding: 0;
+    font-size: 18px;
+    padding: 3px 0;
+    font-weight: 500;
+}
+
+.skill-bar {
+    position: relative;
+}
+
+.nano22 .nano-count22 {
+    right: 0;
+}
+
+.nano22 {
+    width: 59.10%;
+}

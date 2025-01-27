@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Sacramento&display=swap");
+
+body {
+  font-family: "Lato", sans-serif;
+  background-image: url("../img/alt_bg.jpg");
+  background-size: 20%;
+  color: #0a0703;
+}
+
+a {
+  color: rgb(117, 140, 80);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(55, 110, 53);
+}
+
+li {
+  padding-left: 0.5rem;
+  list-style-type: "◆";
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 25vmax 0.1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "header header header header"
+    "links links links links"
+    "sidebar body body body"
+    "sidebar body body body";
+  padding: 0 0px;
+  margin: auto 5vmax auto 5vmax;
+  position: absolute;
+}
+
+.header {
+  grid-area: header;
+  text-align: center;
+  background-image: linear-gradient(
+      rgba(245, 206, 199, 0.5),
+      rgba(245, 206, 199, 0.8) 80%
+    ),
+    url(../img/header.png);
+  background-size: 100%;
+  background-position: 50% 55%;
+  display: flex;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 8vmax;
+  font-family: "Sacramento", cursive;
+  color: #0a0703;
+  text-shadow: 4px 4px 0px rgba(231, 151, 150, 1);
+  margin: auto;
+}
+
+.links {
+  grid-area: links;
+  background-color: #ffc98b;
+  text-align: center;
+  font-size: 1.5vmax;
+  padding: 0.5vmin 0 0.5vmin 0;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #ffb284;
+  font-size: 1.25vmax;
+  padding: 0.5vw 1vmin 0vw;
+}
+
+.sidebar li {
+  margin-left: -1rem;
+}
+
+.sidebar h1 {
+  font-family: "Roboto Slab", serif;
+  font-size: 2vmax;
+  font-weight: 500;
+}
+
+.sidebar h2 {
+  font-family: "Roboto Slab", serif;
+  margin-left: 0.5rem;
+  font-size: 1.5vmax;
+}
+
+.sidebar h2 span.underline {
+  border-bottom: 2px dashed #0a0703;
+}
+
+.body {
+  grid-area: body;
+  background-color: #f5eeec;
+  font-size: 2.5vmin;
+  padding: 0.25vw 2vw 1vw;
+}
+
+.body h1 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 700;
+  font-size: 3vmax;
+  text-align: center;
+}
+
+.body h2 {
+  font-family: "Roboto Slab", serif;
+  font-weight: 500;
+  font-size: 2.2vmax;
+}
+
+.body p.footer {
+  font-style: italic;
+  font-size: 1.5vmin;
+}
+
+img.emoji {
+  /* Since we are using SVGs, you have to change the width using CSS */
+  width: 1.5em;
+
+  /* 
+  This is to make the emojis feel like actual emojis to 
+  the user and they won't act like images. This makes the emojis
+  non-reactive to any mouse events such as dragging, 
+  hovering, clicking etc. Makes it feel like its actual text.
+  */
+  pointer-events: none;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+
+/* Tables */
+table {
+  width: 100%;
+}
+
+td.head {
+  font-weight: bold;
+  background-color: #ffc98b;
+  padding: 0.5em 0.25em;
+  text-align: center;
+}
+
+td {
+  background-color: white;
+  padding: 0.25em 0.5em;
+}
