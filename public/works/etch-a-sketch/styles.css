@@ -289,3 +289,7 @@ div.pixel {
     text-align: center;
     margin-bottom: 0;
 }
+
+.footer a {
+    font-color: #E382B9;
+}
