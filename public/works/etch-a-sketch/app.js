@@ -258,7 +258,6 @@ function popup(state, popupWindow = null) {
     }
 };
 
-
 loadInstructions.addEventListener("click", () => popup("open","instructions"))
 
 closeInstructions.addEventListener("click", () => popup("close"))
